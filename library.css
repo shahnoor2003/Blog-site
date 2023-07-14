@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400&family=Poppins:ital,wght@1,600&family=Russo+One&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    transition: all 0.4s ease-in;
+}
+
+::selection{
+   user-select: none;
+}
+h1{
+ font-family: 'Pacifico', cursive;
+}
+#login{
+    background-color: --C4;
+}
+#main{
+    background-image: url(library\ background.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    border-radius: 30px;
+    width: 100%;
+}
+.light{
+    height: 70px;
+    width: 70px;
+    background: url(light.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.dark{
+    height: 70px;
+    width: 70px;
+    background: url(dark1.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}.bg-dark{
+    background-color: black;
+}
+.textdark{
+    color: white;
+}
+.hr{
+    color: aqua;
+}
+.pic{
+    background-color: white;
+    border-radius: 50%;
+}

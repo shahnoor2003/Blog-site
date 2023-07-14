@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="library.css" />
+    <title>E-Library Website</title>
+  </head>
+  <body>
+    <div class="container-fluid overflow-hidden">
+      <!--Header Navbar-->
+      <header>
+        <nav class="navbar navbar-expand-lg navbar-light p-3" id="navbar">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <img id="pic" src="library logo.png" class="mx-1" height="70" alt="" />
+              </div>
+            </div>
+            <a class="navbar-brand" id="darktext" href="#"><h1>Daily Blogs</h1></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                  <a id="darktext" class="nav-link mx-2 active" aria-current="page" href="blog.html"
+                    >Home</a
+                  >
+                </li>
+                <li  class="nav-item">
+                  <a id="darktext" class="nav-link mx-2" id="white" href="about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a id="darktext" class="nav-link mx-2" href="contact.html">Contact Us</a>
+                </li>
+                <li class="nav-item">
+                  <a id="darktext" class="nav-link mx-2" href="privacy.html">Privacy Policy</a>
+                </li>
+              </ul>
+              <ul class="navbar-nav ms-auto d-sm-inline-flex">
+                <li class="nav-item mx-2">
+                  <a class="nav-link text-dark h5" href="" target="blank"
+                    ><i class="fab fa-google-plus-square"></i
+                  ></a>
+                </li>
+                <li class="nav-item m-auto">
+                  <div class="light" onclick="dark()">
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <main class="d-flex flex-column justify-content-center row-gap-4">
+        <div class="row px-5 "><input type="text" id="text" class="placeholder-glow" placeholder="Enter your Name Here"></div>
+        <div class="row px-5 "><input type="email"id="text" class="placeholder-glow" placeholder="Enter your Email Here *" required></div>
+        <div class="row px-5 "><input type="text" id="text" class="placeholder-glow" placeholder="Enter your phone numer Here (Optional)"></div>
+        <div class="row px-5 "><textarea id="text" placeholder="Start Tying here..." name="" id="" cols="300" rows="10"></textarea></div>
+        <button type="submit" onclick="Submit()" class="btn btn-outline-success mb-2 w-25 align-self-center">Submit</button>
+      </main>
+      <div class="row mt-4 row-gap-3">
+        <h2 class="fs-1 bg-danger-subtle text-center">
+          Feature Blogs
+        </h2>
+          <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column">
+            <div class="row mb-4">
+              <div class="col-lg-4 col-md-6 d-flex align-items-lg-center justify-content-center align-items-lg-center ">
+                <img src="blog img.jpg" class="img-fluid p-md-5 p-lg-0 rounded-4"  alt="" />
+              </div>
+              <div class="col-md-6 col-lg-8">
+                <h3>Post title</h3> 
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Recusandae fuga molestiae laudantium nulla doloremque unde
+                  dolores explicabo architecto excepturi itaque!
+                </p>
+                <div class="row">
+                  <div class="col-12">
+                    <a href="blogspot.html" class="btn btn-outline-success"> Read More..</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column">
+        <div class="row mb-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-lg-center justify-content-center align-items-lg-center">
+            <img src="blog img.jpg" class="img-fluid p-md-5 p-lg-0 rounded-4"  alt="" />
+          </div>
+          <div class="col-md-6 col-lg-8">
+            <h3>Post title</h3> 
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Recusandae fuga molestiae laudantium nulla doloremque unde
+              dolores explicabo architecto excepturi itaque!
+            </p>
+            <div class="row">
+              <div class="col-12">
+                <a href="blogspot.html" class="btn btn-outline-success"> Read More..</a>
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-lg-4 col-md-6 col-sm-12 d-flex flex-column">
+    <div class="row mb-4">
+      <div class="col-lg-4 col-md-6 d-flex align-items-lg-center justify-content-center align-items-lg-center">
+        <img src="blog img.jpg" class="img-fluid p-md-5 p-lg-0 rounded-4"  alt="" />
+      </div>
+      <div class="col-md-6 col-lg-8">
+        <h3>Post title</h3> 
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Recusandae fuga molestiae laudantium nulla doloremque unde
+          dolores explicabo architecto excepturi itaque!
+        </p>
+        <div class="row">
+          <div class="col-12">
+            <a href="blogspot.html" class="btn btn-outline-success"> Read More..</a>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+    <footer class="container h-100" >
+      <div class="row bg-body-tertiary d-flex justify-content-around">
+        <div class=" col-lg-4 col-md-6 col-sm-12 p-5 d-flex flex-column align-items-center">
+          <h5>hello</h5>
+          <a href="">click here</a>
+             <a href="">click here</a>
+                <a href="">click here</a>
+                  
+        </div>
+        <div class=" col-lg-4 col-md-6 col-sm-12 p-5 d-flex flex-column align-items-center">
+          <h5>hello</h5>
+          <a href="">click here</a>
+             <a href="">click here</a>
+                <a href="">click here</a>
+                  
+        </div>
+        <div class=" col-lg-4 col-md-6 col-sm-12 p-5 d-flex flex-column align-items-center">
+          <h5>hello</h5>
+          <a href="">click here</a>
+             <a href="">click here</a>
+                <a href="">click here</a>
+                  
+        </div>
+      </div>
+     
+      <div class="row">
+        <div class="col-6">
+          <p>All right reserved.</p>
+        </div>
+      </div>
+    </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="blog.js"></script>
+  </body>
+</html>
